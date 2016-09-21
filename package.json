@@ -22,7 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "eslint-config-punchcard": "^1.0.1",
-    "eyeglass": "^0.8.3",
+    "eyeglass": "^1.1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-eslint": "^3.0.0",

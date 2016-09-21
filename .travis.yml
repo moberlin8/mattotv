@@ -14,7 +14,7 @@ deploy:
   #########################
   password: ${BLUEMIX_PASSWORD}
   organization: ${BLUEMIX_ORG} # Set to your org
-  space: hackademy # Set to your space
+  space: ${BLUEMIX_SPACE} # Set to your space
   api: https://api.ng.bluemix.net/
   on:
     branch: master

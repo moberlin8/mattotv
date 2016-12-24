@@ -1,7 +1,7 @@
 applications:
   - disk_quota: 1024M
-    host: ha--node-starter
-    name: Hackademy - Node Starter
+    host: matto.tv
+    name: MattO.TV
     path: .
     domain: mybluemix.net
     instances: 1

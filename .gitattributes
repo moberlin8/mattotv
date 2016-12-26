@@ -1,2 +1,35 @@
-# Force LF Line Endings
-* text eol=lf
+# Copied from http://stackoverflow.com/questions/19411981/images-corrupt-after-git-push
+# These settings are for any web project
+
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched.
+# * text=auto
+# The line above caused PNG to be treated as text.
+# git check-attr --all -- public/images/file.png is a good test to see if file is treated as text
+#
+## These files are text and should be normalized (Convert crlf => lf)
+#
+
+# source code
+*.php text
+*.css text
+*.sass text
+*.scss text
+*.less text
+*.styl text
+*.js text
+*.coffee text
+*.json text
+*.htm text
+*.html text
+*.xml text
+*.svg text
+*.txt text
+*.ini text
+*.inc text
+*.pl text
+*.rb text
+*.py text
+*.scm text
+*.sql text
+*.sh text

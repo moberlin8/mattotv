@@ -125,7 +125,7 @@ gulp.task('images', function () {
     //   'svgoPlugins': [
     //     { 'removeViewBox': false }
     //   ]
-    }))
+    //}))
     .pipe(gulp.dest(dirs.public + '/images'));
 });
 

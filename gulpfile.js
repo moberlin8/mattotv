@@ -102,7 +102,7 @@ gulp.task('sass', function () {
   return gulp.src(dirs.sass)
     .pipe(sasslint())
     .pipe(sasslint.format())
-    .pipe(gulpif(isCI, sasslint.failOnError()))
+//mao    .pipe(gulpif(isCI, sasslint.failOnError()))
     .pipe(gulpif(!isCI, sourcemaps.init()))
       .pipe(sass(eyeglass(sassOptions)))
       .pipe(autoprefixer())

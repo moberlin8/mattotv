@@ -119,15 +119,26 @@ gulp.task('sass:watch', function () {
 // Image Tasks
 //////////////////////////////
 gulp.task('images', function () {
+  var nSrc=0, nDes=0;
   return gulp.src(dirs.images)
+    .on("data", function() { nSrc+=1;})
+    .pipe(changed(dest)) //filter out src files not newer than dest
+    .pipe(gulp.dest(dirs.public + '/images'))
+    .on("data", function() { nDes+=1;})
+    .on("finish", function() {
+        util.log("Results for images");
+        util.log("# src files: ", nSrc);
+        util.log("# dest files:", nDes);
+//
+
+});
+
 //mao     .pipe(imagemin({
     //   'progressive': true,
     //   'svgoPlugins': [
     //     { 'removeViewBox': false }
     //   ]
     //}))
-    .pipe(gulp.dest(dirs.public + '/images'));
-});
 
 gulp.task('images:watch', function () {
   return gulp.watch(dirs.images, ['images']);

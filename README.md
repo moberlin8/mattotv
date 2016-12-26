@@ -1,4 +1,4 @@
-# Hackademy Node Starter Project [![Build Status](https://travis.innovate.ibm.com/hackademy/node-starter.svg?token=ufstvqxkop6WTjp1MZ9U&branch=master)](https://travis.innovate.ibm.com/hackademy/node-starter)
+# MattO.TV [![Build Status](https://api.travis-ci.org/moberlin8/mattotv.svg?branch=master)](MattO.TV) Based on Hackademy Node Starter
 
 Welcome to Hackademy!
 

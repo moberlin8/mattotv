@@ -16,6 +16,9 @@ const imagemin = require('gulp-imagemin');
 const cfenv = require('cfenv');
 const gulpif = require('gulp-if');
 const browserSync = require('browser-sync').create();
+const util = require("gulp-util");
+//mao const changed = require("gulp-changed");
+
 
 //////////////////////////////
 // Variables
@@ -122,16 +125,15 @@ gulp.task('images', function () {
   var nSrc=0, nDes=0;
   return gulp.src(dirs.images)
     .on("data", function() { nSrc+=1;})
-    .pipe(changed(dest)) //filter out src files not newer than dest
     .pipe(gulp.dest(dirs.public + '/images'))
+//mao .pipe(changed(dirs.public + '/images')) //filter out src files not newer than dest
     .on("data", function() { nDes+=1;})
     .on("finish", function() {
         util.log("Results for images");
         util.log("# src files: ", nSrc);
         util.log("# dest files:", nDes);
-//
-
-});
+    })
+  });
 
 //mao     .pipe(imagemin({
     //   'progressive': true,

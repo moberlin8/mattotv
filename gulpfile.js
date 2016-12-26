@@ -120,11 +120,11 @@ gulp.task('sass:watch', function () {
 //////////////////////////////
 gulp.task('images', function () {
   return gulp.src(dirs.images)
-    .pipe(imagemin({
-      'progressive': true,
-      'svgoPlugins': [
-        { 'removeViewBox': false }
-      ]
+//mao     .pipe(imagemin({
+    //   'progressive': true,
+    //   'svgoPlugins': [
+    //     { 'removeViewBox': false }
+    //   ]
     }))
     .pipe(gulp.dest(dirs.public + '/images'));
 });

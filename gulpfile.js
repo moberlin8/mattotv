@@ -18,6 +18,7 @@ const gulpif = require('gulp-if');
 const browserSync = require('browser-sync').create();
 const util = require("gulp-util");
 const tap = require("gulp-tap");
+const path = require('path');
 
 
 //////////////////////////////

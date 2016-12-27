@@ -17,7 +17,7 @@ const cfenv = require('cfenv');
 const gulpif = require('gulp-if');
 const browserSync = require('browser-sync').create();
 const util = require("gulp-util");
-//mao const changed = require("gulp-changed");
+const changed = require("gulp-tap");
 
 
 //////////////////////////////

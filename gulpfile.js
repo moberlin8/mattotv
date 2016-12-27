@@ -129,7 +129,7 @@ gulp.task('images', function () {
     .pipe(gulp.dest(dirs.public + 'images'))
 //mao .pipe(changed(dirs.public + '/images')) //filter out src files not newer than dest
     .pipe(tap(function (file,t) {
-    console.log(path.basename(file.path));
+    console.log(file.path);
      }))
     .on("data", function() { nDes+=1;})
     .on("finish", function() {

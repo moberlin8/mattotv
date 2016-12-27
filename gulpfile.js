@@ -17,7 +17,7 @@ const cfenv = require('cfenv');
 const gulpif = require('gulp-if');
 const browserSync = require('browser-sync').create();
 const util = require("gulp-util");
-const changed = require("gulp-tap");
+const tap = require("gulp-tap");
 
 
 //////////////////////////////
@@ -127,6 +127,9 @@ gulp.task('images', function () {
     .on("data", function() { nSrc+=1;})
     .pipe(gulp.dest(dirs.public + 'images'))
 //mao .pipe(changed(dirs.public + '/images')) //filter out src files not newer than dest
+    .pipe(tap(function (file,t) {
+    console.log(path.basename(file.path));
+     }))
     .on("data", function() { nDes+=1;})
     .on("finish", function() {
         util.log("Results for images");

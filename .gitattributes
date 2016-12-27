@@ -33,7 +33,3 @@
 *.scm text
 *.sql text
 *.sh text
-
-# Everything that isn't text should be binary. Travis git converts cr/lf on png. Still trying to fix png
-* binary
-*.png -crlf -diff

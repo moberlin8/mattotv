@@ -130,7 +130,10 @@ gulp.task('images', function () {
         { 'removeViewBox': false }
       ]
     }))
-    .pipe(gulp.dest(dirs.public + '/images'));
+    .pipe(gulp.dest(dirs.public + '/images'))
+    .pipe(tap(function (file,t) {
+     console.log(path.basename(file.path))
+      }));
 });
 
 gulp.task('images:watch', function () {

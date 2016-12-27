@@ -34,5 +34,5 @@
 *.sql text
 *.sh text
 
-# images
-*.png binary
+# Everything that isn't text should be binary. Travis git converts cr/lf on png
+* binary

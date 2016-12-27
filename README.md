@@ -1,4 +1,4 @@
-#  ![Build Status](https://api.travis-ci.org/moberlin8/mattotv.svg?branch=master) [MattO.TV](MattO.TV)
+#  ![Build Status](https://api.travis-ci.org/moberlin8/mattotv.svg?branch=master) [MattO.TV](https://mattotv.mybluemix.net)
 
 This repo is based on Hackademy Node Starter.  Following the instructions below will get you set up and ready to start working.
 

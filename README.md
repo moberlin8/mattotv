@@ -1,8 +1,6 @@
-# MattO.TV [![Build Status](https://api.travis-ci.org/moberlin8/mattotv.svg?branch=master)](MattO.TV) Based on Hackademy Node Starter
+#  [![Build Status](https://api.travis-ci.org/moberlin8/mattotv.svg?branch=master)] MattO.TV(MattO.TV)
 
-Welcome to Hackademy!
-
-This repository will be the starting place for your work throughout Hackademy. Following the instructions below will get you set up and ready to start working. Many items may seem new at first, but as you progress through Hackademy, everything should become more familiar. We encourage you to make this codebase your own!
+This repo is based on Hackademy Node Starter.  Following the instructions below will get you set up and ready to start working.
 
 ## Collaborating
 
